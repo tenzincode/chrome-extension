@@ -3,7 +3,10 @@
 	"name": "NASA Astronomy Picture of the Day",
 	"description": "NASA Astronomy Picture of the Day",
 	"version": "1.0",
-	"permissions": ["storage"],
+	"permissions": ["storage", "notifications", "alarms"],
+	"background": {
+		"service_worker": "background.js"
+	},
 	"action": {
 	  "default_popup": "popup.html",
 	  "default_icon": {
