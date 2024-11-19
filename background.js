@@ -1,4 +1,8 @@
-const apiKey = "xem3ovPgeh9zWrw3fOyY4tTldhimR3ckKqnk9UoC";  // Replace with your actual NASA API key
+// background.js
+
+import config from './config.js'
+
+const apiKey = config.NASA_API_KEY;
 
 // Alarm once a day
 chrome.runtime.onInstalled.addListener(() => {

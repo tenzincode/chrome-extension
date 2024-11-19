@@ -1,6 +1,10 @@
+// popup.js
+
+import config from './config.js'
+
 document.addEventListener("DOMContentLoaded", async () => {
 	const contentDiv = document.getElementById("content");
-	const apiKey = "xem3ovPgeh9zWrw3fOyY4tTldhimR3ckKqnk9UoC";
+	const apiKey = config.NASA_API_KEY;
 	const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 
 	try {
